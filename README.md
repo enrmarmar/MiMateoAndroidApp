@@ -22,4 +22,6 @@ To Do:
 - Develop the others Mi Mateo features (contacts, notifications...)
 - Improve the user interface
 
+- - -
+
 Enrique Martín Martínez. 2013. Albacete.
