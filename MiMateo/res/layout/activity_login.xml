@@ -17,12 +17,21 @@
         android:clickable="true"
         android:onClick="login"
         android:text="Login" />
+
+    <TextView
+        android:id="@+id/textViewTestLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modo de pruebas"
+        android:layout_below="@+id/buttonLogin"
+        android:layout_marginTop="18dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
     
     <Button
         android:id="@+id/buttonLogin1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/buttonLogin"
+        android:layout_below="@+id/textViewTestLogin"
         android:layout_marginTop="18dp"
         android:clickable="true"
         android:onClick="loginAs1"

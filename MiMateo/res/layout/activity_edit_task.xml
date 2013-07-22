@@ -8,23 +8,11 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".EditTaskActivity" >
 
-    <TextView
-        android:id="@+id/textViewTitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="50dp"
-        android:text="Editar tarea"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
     <EditText
         android:id="@+id/editTextName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textViewTitle"
-        android:layout_marginTop="25dp"
         android:ems="10" >
 
         <requestFocus />
@@ -37,7 +25,7 @@
         android:layout_below="@+id/editTextName"
         android:ems="10"
         android:inputType="textMultiLine" />
-    
+
     <DatePicker
         android:id="@+id/datepickerDeadline"
         android:layout_width="match_parent"
@@ -54,4 +42,3 @@
         android:text="Guardar" />
 
 </RelativeLayout>
-

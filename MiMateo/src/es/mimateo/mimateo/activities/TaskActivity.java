@@ -69,16 +69,14 @@ public class TaskActivity extends Activity {
 			
 			if (task.getCompleted())
 			{
-				buttonComplete.setVisibility(View.GONE);
-//				ViewGroup vg = (ViewGroup)(buttonComplete.getParent());
-//				vg.removeView(buttonComplete);
+				ViewGroup vg = (ViewGroup)(buttonComplete.getParent());
+				vg.removeView(buttonComplete);
 			}
 			
-			if (!task.isDeadlineMissed())
+			if (!task.isDeadlineMissed() || task.getCompleted())
 			{
-				buttonPostpone.setVisibility(View.GONE);
-//				ViewGroup vg = (ViewGroup)(buttonPostpone.getParent());
-//				vg.removeView(buttonPostpone);
+				ViewGroup vg = (ViewGroup)(buttonPostpone.getParent());
+				vg.removeView(buttonPostpone);
 			}
 		}
 
